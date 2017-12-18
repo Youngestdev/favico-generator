@@ -10,8 +10,8 @@
  
 ## To install favico-generator, follow the instructions below :
 
-Install Yargs : ` - sudo npm install yargs -g`
-Install imagemagick `- sudo apt-get install imagemagick && sudo npm install imagemagick -g` (For Linux ony)
+Install Yargs : `  sudo npm install yargs -g`<br>
+Install imagemagick `sudo apt-get install imagemagick && sudo npm install imagemagick -g` (For Linux ony)
 
 after all the above steps then do this : `sudo npm install favico-generator`
  
