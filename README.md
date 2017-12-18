@@ -1,6 +1,15 @@
 # favico-generator
  Favico generator by me.
  
+ # Dependencies
+ 
+ - Imagemagick
+ - yargs
+ 
+ # Installing
+ 
+ Still comin, be patient for procedures.
+ 
  ## Usage
  `favico-generator`
  <img src="http://i67.tinypic.com/2ewi9h0.png" border="0" alt="Image and video hosting by TinyPic">
