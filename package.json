@@ -12,6 +12,9 @@
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
+  "bin": {
+    "favico-generator": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Youngestdev/favico-generator.git"
@@ -23,3 +26,4 @@
   },
   "homepage": "https://github.com/Youngestdev/favico-generator#readme"
 }
+
