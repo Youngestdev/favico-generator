@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /*
 Favico Generator.. Generates Favicons from Image files by Abdul <laisibizness@gmail.com>
 */
