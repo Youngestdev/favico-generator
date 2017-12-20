@@ -1,11 +1,7 @@
 # favico-generator
  Favico generator by me.
- 
- # Dependencies
- 
- - Imagemagick
- - yargs
- 
+
+
  # Installing
  
 ### On Unix/Linux
