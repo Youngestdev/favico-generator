@@ -16,7 +16,7 @@ const argv = require('yargs')
   .demandOption(['f'])
   .help('h')
   .alias('h', 'help')
-  .epilog('Copyright   Abdul 2017')
+  .epilog('Copyright Abdul 2017')
   .argv;
 
 const s = fs.createReadStream(argv.file);
