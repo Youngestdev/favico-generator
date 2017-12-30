@@ -9,11 +9,15 @@ Favico Generator.. Generates Favicons from Image files by Abdul <laisibizness@gm
 const im = require('imagemagick');
 const fs = require('fs');
 const argv = require('yargs')
-  .usage('Usage: $0 option filename \n e.g $0 -f image.png')
+  .usage('Usage: $0 option filename \n e.g $0 -f image.png -r 160x160')
   .alias('f', 'file')
+  .alias('r', 'res')
   .nargs('f', 1)
+  .nargs('r', 1)
   .describe('f', 'Loads file to be converted to favico')
+  .describe('r', 'Specifies the width and height e.g 160x160')
   .demandOption(['f'])
+  .demandOption(['r'])
   .help('h')
   .alias('h', 'help')
   .epilog('Copyright Abdul 2017')
@@ -22,7 +26,7 @@ const argv = require('yargs')
 const s = fs.createReadStream(argv.file);
 
 const convert = s.on('data', (buf) => im.convert([
-  argv.file, '-resize', '160x160', 'favico.ico'
+  argv.file, '-resize', argv.res, 'favico.ico'
 ], function (err, stdout) {
   if (err) 
     throw err;
@@ -30,4 +34,4 @@ const convert = s.on('data', (buf) => im.convert([
   }
 ));
 
-s.on('end', () => console.log('Success, File saved as "favico.ico in ' + process.cwd()));
+s.on('end', () => console.log('Success, File saved as favico.ico in ' + process.cwd()));
