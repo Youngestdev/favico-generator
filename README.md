@@ -41,6 +41,6 @@ Options:
  <img src="http://i68.tinypic.com/2lo6put.png" border="0" alt="favico generator">
 
  ## Contributing
- Have any idea, found any bug or want to improve this project, check out the contributing guidelines <a href="https://github.com/Youngestdev/CONTRIBUTION.md">HERE</a>
+ Have any idea, found any bug or want to improve this project, check out the contributing guidelines <a href="CONTRIBUTING.md">HERE</a>
  
  # Thanks !
