@@ -1,11 +1,7 @@
 # favico-generator
  Favico generator by me.
- 
- # Dependencies
- 
- - Imagemagick
- - yargs
- 
+
+
  # Installing
  
 ### On Unix/Linux
@@ -32,10 +28,11 @@ Options:
 ```
 
  `favico-generator`
- <img src="http://i67.tinypic.com/2ewi9h0.png" border="0" alt="Image and video hosting by TinyPic">
- 
+  
  ## Creating favicos 
  Use the command : `favico-generator -f image.jpg` and then follow the instructions to view your favico.
  
+ <img src="http://i65.tinypic.com/2ugnkm8.png" border="0" alt="favico generator">
+
  
  # Thanks !
