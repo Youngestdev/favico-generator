@@ -30,9 +30,10 @@ Options:
  `favico-generator`
   
  ## Creating favicos 
- Use the command : `favico-generator -f image.jpg` and then follow the instructions to view your favico.
+ Use the command : `favico-generator -f image.jpg -r 160x160` and then follow the instructions to view your favico.
+ NOTE::: 160x160 is the default resolution, you can change the value to maybe something like 100x100, 200x100 etc.
  
- <img src="http://i65.tinypic.com/2ugnkm8.png" border="0" alt="favico generator">
+ <img src="http://i68.tinypic.com/2lo6put.png" border="0" alt="favico generator">
 
  
  # Thanks !
