@@ -19,14 +19,15 @@ npm install -g favico-generator
 
  # Usage.
 
-```
+```bash
 favico-generator
 Usage: favico-generator   option filename
- e.g favico-generator -f image.png
+ e.g favico-generator -f image.png -r 160x160
 
 Options:
   --version   Show version number                                      [boolean]
   -f, --file  Loads file to be converted to favico                    [required]
+  -r, --res   Specifies the width and height of the favico to be generated e.g 160x160  [required]
   -h, --help  Show help
 ```
 
