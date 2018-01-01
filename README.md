@@ -39,7 +39,7 @@ Options:
  ## NOTE
   160x160 is the default resolution, you can change the value to maybe something like 100x100, 200x100 etc.
  
- <img src="http://i68.tinypic.com/2lo6put.png" border="0" alt="favico generator">
+ <img src="http://res.cloudinary.com/laisi/image/upload/v1514771538/mxjsfwxtgrlmn0atepta.gif" border="0" alt="favico generator">
 
  ## Contributing
  Have any idea, found any bug or want to improve this project, check out the contributing guidelines <a href="CONTRIBUTING.md">HERE</a>
