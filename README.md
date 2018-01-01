@@ -1,5 +1,5 @@
 # Favico Generator.
-
+A simple npm module that generates favicons from images .
 # About
  Simple but powerful favicon genreator.
  Favico generator by me. It generates favicons from images.
@@ -43,5 +43,9 @@ Options:
 
  ## Contributing
  Have any idea, found any bug or want to improve this project, check out the contributing guidelines <a href="CONTRIBUTING.md">HERE</a>
+ 
+ ## Contact
+ To contact me, you can tweet to me at my twitter handle <a href="https://twitter.com/kvng_zeez">@Kvng_zeez</a>.
+ Or if it's a long message just mail me at `laisibizness@gmail.com`. You can also reach me on facebook by clicking <a href="https://fb.me/kvng.laisi">Me</a>
  
  # Thanks !
