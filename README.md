@@ -1,6 +1,6 @@
   # Favico Generator. 
-[![Made in Nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria) [![Help Contribute to Open Source](https://www.codetriage.com/youngestdev/favico-generator/badges/users.svg)](https://www.codetriage.com/youngestdev/favico-generator) <img src="https://img.shields.io/npm/v/favico-generator.svg" alt="downloads" /><img src="https://img.shields.io/npm/dm/favico-generator.svg" alt="version" />
-A simple npm module that generates favicons from images .
+[![Made in Nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=flat-square)](https://github.com/acekyd/made-in-nigeria) [![Help Contribute to Open Source](https://www.codetriage.com/youngestdev/favico-generator/badges/users.svg)](https://www.codetriage.com/youngestdev/favico-generator) <img src="https://img.shields.io/npm/v/favico-generator.svg" alt="downloads" /><img src="https://img.shields.io/npm/dm/favico-generator.svg" alt="version" /><br />
+
 # About
  Simple but powerful favicon genreator.
  Favico generator by me. It generates favicons from images.
