@@ -5,7 +5,9 @@ Favico Generator.. Generates Favicons from Image files by Abdul <laisibizness@gm
 */
 
 //  Lets start the party over here..
-
+const url = require("url");
+const path = require("path");
+const request = require('request');
 const im = require('imagemagick');
 const fs = require('fs');
 const argv = require('yargs')
@@ -23,15 +25,38 @@ const argv = require('yargs')
   .epilog('Copyright Abdul 2017')
   .argv;
 
-const s = fs.createReadStream(argv.file);
+let s = null;
 
-const convert = s.on('data', (buf) => im.convert([
+const convertImage = (buf) => im.convert([
   argv.file, '-resize', argv.res, 'favico.ico'
 ], function (err, stdout) {
-  if (err) 
-    throw err;
-    //   console.log('stdout:',  stdout);
-  }
-));
+  if (err) throw err;
 
-s.on('end', () => console.log('Success, File saved as favico.ico in ' + process.cwd()));
+  console.log('Success, File saved as favico.ico in ' + process.cwd());
+});
+
+const readFile = (file) => {
+  const s = fs.createReadStream(argv.file);
+  s.on('data', convertImage);
+}
+
+const readUrl = (urlPath) => {
+  const parsedUrl = url.parse(urlPath);
+  const filename = path.basename(parsedUrl.pathname);
+  const writableStream = fs.createWriteStream(filename);
+  request(urlPath).pipe(writableStream);
+
+  writableStream.on('finish', (res) => {
+    convertImage(filename);
+  });
+}
+
+try {
+  if (fs.existsSync(argv.file)) {
+    readFile(argv.file);
+  } else {
+    readUrl(argv.file);
+  }
+} catch(e) {
+  throw e;
+}
