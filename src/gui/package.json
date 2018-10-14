@@ -1,0 +1,35 @@
+{
+  "name": "favico-generator-gui",
+  "version": "1.0.0",
+  "description": "Simple tool that generate favicons from image files.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "babel index.js --minified --out-dir bin",
+    "start": "node -r @babel/register .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youngestdev/favico-generator.git"
+  },
+  "author": "Abdulazeez Abdulazeez Adeshina <laisibizness@gmail.com> (http://twitter.com/kvng_zeez)",
+  "contributors": [
+    "Jaime Leonardo Suncin Cruz <leosuncin@gmail.com> (http://suncin.me)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Youngestdev/favico-generator/issues"
+  },
+  "homepage": "https://github.com/Youngestdev/favico-generator#readme",
+  "dependencies": {
+    "proton-native": "^1.1.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0"
+  }
+}
