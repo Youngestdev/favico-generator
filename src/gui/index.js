@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
+import { render, Window, App } from 'proton-native';
 
-import { render, Window, App, Text } from 'proton-native';
+import Main from './components/main';
 
-class FavicoApp extends Component {
-  render() {
-    return (
-      <App>
-        <Window title="Favico generator!" size={{w: 300, h: 300}} menuBar={false}>
-            <Text>Favico Generator</Text>
-        </Window>
-      </App>
-    );
-  }
-}
+const FavicoApp = () => (
+  <App>
+    <Window
+      title="Favico generator!"
+      size={{ w: 300, h: 200 }}
+      menuBar={false}
+      margined
+    >
+      <Main />
+    </Window>
+  </App>
+);
 
 render(<FavicoApp />);
