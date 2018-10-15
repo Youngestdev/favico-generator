@@ -7,6 +7,8 @@
   "scripts": {
     "build": "babel index.js --minified --out-dir bin",
     "dev": "nodemon",
+    "dist": "electron-builder",
+    "pack": "electron-builder --dir",
     "start": "node -r @babel/register .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,6 +34,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "electron-builder": "^20.28.4",
     "nodemon": "^1.18.4"
   },
   "nodemonConfig": {
@@ -42,5 +45,20 @@
       "build"
     ],
     "exec": "npm start"
+  },
+  "build": {
+    "productName": "Favico Generator",
+    "protonNodeVersion": "current",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "identity": null
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Utility"
+    },
+    "win": {
+      "target": "portable"
+    }
   }
 }
