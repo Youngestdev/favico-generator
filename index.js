@@ -19,15 +19,9 @@ const argv = require('yargs')
   .alias('h', 'help')
   .epilog('Copyright Abdul 2017').argv;
 
-const convertImage = require('./src/lib/convertImage');
-const downloadFile = require('./src/lib/downloadFile');
+const favico = require('./src/lib');
 
-const favico = (from, to, args) =>
-  fs.existsSync(from)
-    ? convertImage(from, to, args)
-    : downloadFile(from).then(file => convertImage(file, to, args));
-
-favico(argv.file, 'favico.ico')
+favico(argv.file, 'favico.ico', argv.res)
   .then(() =>
     console.log('Success, File saved as favico.ico in ' + process.cwd())
   )
