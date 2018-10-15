@@ -11,7 +11,7 @@ import {
   TextInput
 } from 'proton-native';
 
-import favico from '../../lib';
+import favico from '../lib';
 import { METHOD_FILE, METHOD_URL } from '../constants';
 
 const intRegex = /\d+/;
