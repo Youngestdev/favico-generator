@@ -5,11 +5,11 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "babel index.js --minified --out-dir bin",
+    "build": "babel --minified --out-dir bin index.js",
     "dev": "nodemon",
     "dist": "electron-builder",
     "pack": "electron-builder --dir",
-    "start": "node -r @babel/register .",
+    "start": "babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,13 +29,12 @@
     "proton-native": "^1.1.9"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "electron-builder": "^20.28.4",
-    "nodemon": "^1.18.4"
+    "babel-cli": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-stage-0": "latest",
+    "electron-builder": "latest",
+    "nodemon": "latest"
   },
   "nodemonConfig": {
     "ignore": [

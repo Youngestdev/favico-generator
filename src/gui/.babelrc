@@ -1,7 +1,7 @@
 {
   "presets": [
     [
-      "@babel/preset-env",
+      "env",
       {
         "targets": {
           "node": "current"
@@ -9,6 +9,7 @@
         "useBuiltIns": "usage"
       }
     ],
-    "@babel/preset-react"
+    "stage-0",
+    "react"
   ]
 }
