@@ -1,0 +1,15 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        },
+        "useBuiltIns": "usage"
+      }
+    ],
+    "stage-0",
+    "react"
+  ]
+}

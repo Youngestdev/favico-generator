@@ -1,0 +1,65 @@
+{
+  "name": "favico-generator-gui",
+  "version": "1.0.0",
+  "description": "Simple tool that generate favicons from image files.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "babel --minified --out-dir bin index.js",
+    "dev": "nodemon",
+    "dist": "electron-builder",
+    "pack": "electron-builder --dir",
+    "start": "babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youngestdev/favico-generator.git"
+  },
+  "author": "Abdulazeez Abdulazeez Adeshina <laisibizness@gmail.com> (http://twitter.com/kvng_zeez)",
+  "contributors": [
+    "Jaime Leonardo Suncin Cruz <leosuncin@gmail.com> (http://suncin.me)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Youngestdev/favico-generator/issues"
+  },
+  "homepage": "https://github.com/Youngestdev/favico-generator#readme",
+  "dependencies": {
+    "imagemagick": "^0.1.3",
+    "proton-native": "^1.1.9",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "babel-cli": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-stage-0": "latest",
+    "electron-builder": "latest",
+    "nodemon": "latest"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/**",
+      "bin",
+      "dist",
+      "build"
+    ],
+    "exec": "npm start"
+  },
+  "build": {
+    "productName": "Favico Generator",
+    "protonNodeVersion": "current",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "identity": null
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Utility"
+    },
+    "win": {
+      "target": "portable"
+    }
+  }
+}
